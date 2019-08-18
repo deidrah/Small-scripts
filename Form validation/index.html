@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form validation</h1>
+        <form action="#" id="myForm">
+            <input type="text" name="your-name" placeholder="Name" data-error="Podaj imię i nazwisko">
+            <input type="email" name="your-email" placeholder="E-mail" data-error="Podaj poprawny adres e-mail">
+            <select name="your-subject" data-error="Choose subject">
+                <option value="" disabled selected>- Subject -</option>
+                <option value="pytanie">Question</option>
+                <option value="propozycja">Proposition</option>
+                <option value="support">Support</option>
+            </select>
+            <textarea name="your-message" placeholder="Your message..." data-error="Write your message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+<script src="js/scripts.js"></script>
+</body>
+</html>
